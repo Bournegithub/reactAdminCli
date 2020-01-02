@@ -10,26 +10,6 @@ UI组件库使用antd
 
 环境变量配置使用了cross-env,src目录下config.js配置文件通过判断当前环境引入了*.json
 
-switch (process.env.REACT_APP_SECRET_API) {
-    case "local":
-        config = require("./config/local.json");
-        break;
-    case "dev":
-        config = require("./config/dev.json");
-        break;
-    case "test":
-        config = require("./config/test.json");
-        break;
-    case "pre":
-        config = require("./config/pre.json");
-        break;
-    case "prod":
-        config = require("./config/prod.json");
-        break;
-    default:
-        break;
-}
-
 http请求方面,主要做了@RequestBody、@RequsetParam、get请求封装，对于header有自定义要求的自行修改.请求前统一拦截，返回后统一拦截.
 
 react-redux模块化管理，其他数据根据userInfo示例修改即可
