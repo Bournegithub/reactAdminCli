@@ -21,5 +21,5 @@ react-redux模块化管理，其他数据根据userInfo示例修改即可
 使用:
 
 npm run install
-npm run dev
+npm run start
 
