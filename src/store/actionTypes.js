@@ -1,0 +1,1 @@
+export const USERINFO_CHANGE ='USERINFO_CHANGE';
