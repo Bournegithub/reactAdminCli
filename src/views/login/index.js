@@ -25,11 +25,12 @@ class Login extends React.Component {
             phone: user.phone,
             address: user.address,
             company: user.company,
+            avatar: user.avatar
         });
-        await setStorage('user', user.name);
-        await setStorage('phone',user.phone);
-        await setStorage('token',user.token);
-        await this.props.history.push('/');
+        for (let key in user) {
+            setStorage(key, user[key]);
+        }
+        this.props.history.push('/');
     }
     render() {
         return (
@@ -63,6 +64,7 @@ const mapStateToProps = (state, ownProps) => {
         phone: state.userInfo.phone,
         address: state.userInfo.address,
         company: state.userInfo.company,
+        avatar: state.userInfo.avatar
     }
 }
 function mapActionToProps(dispatch) {
@@ -75,6 +77,7 @@ Login.propTypes = {
     phone: PropTypes.string.isRequired,
     address: PropTypes.string.isRequired,
     company: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
     userInfoChange: PropTypes.func.isRequired
 }
 export default connect(mapStateToProps,mapActionToProps)(Login)

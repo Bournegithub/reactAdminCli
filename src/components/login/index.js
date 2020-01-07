@@ -61,7 +61,6 @@ class LoginForm extends React.Component {
                     Or <a href="">register now!</a>
                 </Form.Item>
             </Form>
-
         );
     }
 }

@@ -1,16 +1,19 @@
 import React from 'react';
 import { Page, Section } from 'react-page-layout';
 
-
-class ListIndex extends React.Component{
+class Level extends React.Component{
+    constructor(props){
+        super(props);
+    }
     render(){
-        return (
+        return(
             <Page layout="public">
                 <Section slot="main">
-                    <h1 className="aaaa">list页面</h1>
+                    <h1 className="aaaa">level</h1>
                 </Section>
             </Page>
         )
     }
 }
-export default ListIndex;
+
+export default Level;

@@ -18,7 +18,7 @@ react-redux模块化管理，其他数据根据userInfo示例修改即可
 
 路由做了全局路由守卫,未设置页面重定向到登录页面、登录后返回原页面.
 
-在frontendAuth.js路由守卫处理文件里，可对应不同路由选择不同的页面layout布局，具体参考引入PublicLayout的用法.
+在frontendAuth.js路由守卫处理文件里，可对应不同路由选择不同的页面layout布局，具体参考引入PublicLayout的用法,多套layout布局可通过判断路由来加载不同的layout.
 
 使用:
 

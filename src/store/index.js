@@ -1,10 +1,12 @@
 import { createStore, combineReducers } from 'redux';
 import userInfo from './reducers/userInfo';
+import menuInfo from './reducers/menuInfo';
 // createStore方法是用来创建store的，combineReducers方法是用来合并多个reducer的
 
 // 创建根reducer，利用combineReducers合并多个reducer，此处还未定义reducer，所以暂空
 const rootReducer = combineReducers({
-    userInfo
+    userInfo,
+    menuInfo
 })
 
 // 创建初始化的state，初始化为一个空对象即可，默认的数据建议都写在reducer上

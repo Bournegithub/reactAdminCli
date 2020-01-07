@@ -1,6 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import './App.scss';
-import { HashRouter,Switch } from 'react-router-dom';
+import { HashRouter, Switch } from 'react-router-dom';
 import Routers from './router/routerMap';
 import FrontendAuth from './router/frontendAuth';
 
@@ -12,7 +13,7 @@ class App extends React.Component{
         return(
             <HashRouter>
                 <Switch>
-                    <FrontendAuth config={Routers} />
+                    <FrontendAuth routers={Routers} />
                 </Switch>
             </HashRouter>
         )
