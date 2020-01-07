@@ -17,9 +17,8 @@ export class FrontendAuth extends React.Component{
         const { pathname } = location;
         const isLogin = localStorage.getItem('token');
 
-        // 如果该路由不用进行权限校验，登录状态下登陆页除外
-        // 因为登陆后，无法跳转到登陆页
-        // 这部分代码，是为了在非登陆状态下，访问不需要权限校验的路由
+        // 如果该路由不用进行权限校验，登录状态下登陆页除外.登陆后，无法跳转到登陆页
+        // 非登陆状态下，访问不需要权限校验的路由
         // const targetRouterConfig = config.find((v) => v.path === pathname);
         const targetRouterConfig = routers.find((v) => {
             if (v.path === pathname) {
@@ -44,7 +43,7 @@ export class FrontendAuth extends React.Component{
                     // console.log(this.props.location, 'frontend-this.props.location');
                     // 此处可做判断引用对应的的layout模版
                     // 此种写法可对Route增加自定义属性
-                    // return <LayoutProvider location={this.props.location} layouts={layouts}><Route path={pathname} render={(props) => <targetRouterConfig.component test={123} {...props}/>}/></LayoutProvider>
+                    // return <LayoutProvider location={this.props.location} layouts={layouts}><Route path={pathname} render={(props) => <targetRouterConfig.component example={example} {...props}/>}/></LayoutProvider>
                     return  <LayoutProvider location={this.props.location} layouts={layouts}><Route path={pathname} component={targetRouterConfig.component} /></LayoutProvider>
                 }else{
                     // 如果路由不合法，重定向到 404 页面

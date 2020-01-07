@@ -4,6 +4,8 @@ import { Layout, Breadcrumb, Icon } from 'antd';
 import ContentHeader from '../../components/header/index';
 import ContentFooter from '../../components/footer/index';
 import ContentSiderBar from '../../components/sider/index';
+import BreadCrumb from '../../components/breadCrumb/index'
+import ContentBreadCrumb from "../breadCrumb";
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -32,10 +34,7 @@ class PublicLayout extends React.Component{
                         <ContentHeader />
                     </Header>
                     <Content style={{ margin: '0 16px' }}>
-                        <Breadcrumb style={{ margin: '16px 0' }}>
-                            <Breadcrumb.Item>User</Breadcrumb.Item>
-                            <Breadcrumb.Item>Bill</Breadcrumb.Item>
-                        </Breadcrumb>
+                        <ContentBreadCrumb {...this.state.currentLocation}/>
                         <div style={{ padding: 10, background: '#fff', height: 'calc(100% - 60px)' }}>
                             <Slot name="main" />
                         </div>

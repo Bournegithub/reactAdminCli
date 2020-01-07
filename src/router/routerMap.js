@@ -9,9 +9,9 @@ import Level from '../views/level/index';
 import SubLevel1 from '../views/level/subLevel1/index';
 import SubLevel2 from '../views/level/subLevel2/index';
 
-// 嵌套路由由于switch的匹配问题，建议再写一份.如果有好办法请告知我
+// 嵌套路由菜单由于switch的匹配问题，建议再写一份.如果有好办法请告知我
 const Routers = [
-    {path: '/', name:'App', component: Home, auth: true},
+    {path: '/', name:'home', component: Home, auth: true},
     {path: '/home', name:'home', component: Home, auth: true},
     {path: '/login', name: 'login', component: Login, auth: false},
     {path: '/list', name:'list', component: ListIndex, auth: true},

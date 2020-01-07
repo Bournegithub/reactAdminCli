@@ -1,5 +1,9 @@
 # reactAdminCli
 
+wx: 13816099235
+写在开头:
+React同学去试试vue吧。还是我大VUE好啊，什么组件重复渲染优化，不存在的.react-redux看起来也没有vue-x爽
+
 说明:
 
 基于react做的后台web架构，方便快速搭建后台项目.
@@ -24,4 +28,6 @@ react-redux模块化管理，其他数据根据userInfo示例修改即可
 
 npm install
 npm run start
+
+
 
