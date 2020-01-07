@@ -1,8 +1,10 @@
 # reactAdminCli
 
 wx: 13816099235
+
 写在开头:
-React同学去试试vue吧。还是我大VUE好啊，什么组件重复渲染优化，不存在的.react-redux看起来也没有vue-x爽
+
+用React的同学,Vue要不要了解下。还是我大Vue好啊，什么组件重复渲染优化，不存在的.react-redux看起来也没有vue-x爽
 
 说明:
 
