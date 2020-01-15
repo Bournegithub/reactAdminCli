@@ -18,6 +18,9 @@ class ContentHeader extends React.Component{
         cleanStorage();
         this.props.history.push('/login');
     }
+    shouldComponentUpdate(nextProps, nextState) {
+        return false
+    }
     render(){
         return(
             <div className="header">
