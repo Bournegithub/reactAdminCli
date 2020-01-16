@@ -35,7 +35,7 @@ axios.interceptors.response.use(
         }
     },
     err => {
-        // 此处引用组件
+        // 此处引用组件处理异常
         console.log('interceptors-err', err);
         if (err.response.status === 504 || err.response.status === 404) {
             console.log("服务器被吃了⊙﹏⊙∥");
