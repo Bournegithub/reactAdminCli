@@ -1,16 +1,16 @@
 # reactAdminCli
 
-wx: 13816099235
+微信: 13816099235
 
 写在开头:
 
-用React的同学,Vue要不要了解下。还是我大Vue好啊，什么组件重复渲染优化，不存在的.react-redux看起来也没有vue-x爽
+用React的同学,Vue要不要了解下。还是大Vue好，什么组件重复渲染优化，不存在的.react-redux看起来也没有vue-x爽
 
 说明:
 
 基于react做的后台web架构，方便快速搭建后台项目.
 
-主要插件为cross-env react-router-dom, react-redux, axios, react-page-layout.
+主要插件为cross-env, react-router-dom, react-redux, axios, react-page-layout.
 
 UI组件库使用antd
 
@@ -29,6 +29,7 @@ react-redux模块化管理，其他数据根据userInfo示例修改即可
 使用:
 
 npm install
+
 npm run start
 
 
