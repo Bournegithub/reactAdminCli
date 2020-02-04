@@ -1,6 +1,6 @@
 # reactAdminCli
 
-微信: 13816099235
+微信:13816099235, 邮箱:xuhui.yon@gmail.com
 
 写在开头:
 
